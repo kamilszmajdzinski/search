@@ -1,0 +1,77 @@
+// Styling for the navbar
+#secondaryNav {
+  border-bottom: 1px solid fade-out($gray-900, .9);
+  background-color: $white;
+  font-family: Poppins, sans-serif;
+  @include transition-all;
+  .navbar-brand {
+    width: 15%;
+  }
+  .navbar-nav {
+    .navbar-phone {
+      border: 2px solid white;
+      transition: ease 0.2s;
+    }
+    .navbar-phone:hover {
+      cursor: pointer;
+      background-color: white;
+    }
+    .navbar-phone:hover > #cellButton{
+      color: $prussianBlue;
+    }
+    > li.nav-item {
+      > a.nav-link,
+      > a.nav-link:focus {
+        font-size: .9rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $gray-900;
+        &:hover {
+          color: $cerulean;
+        }
+        &.active {
+          color: $cerulean !important;
+          background-color: $prussianBlue;
+          &:hover {
+            background-color: $prussianBlue;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    border-color: $prussianBlue;
+    background-color: $prussianBlue;
+    .navbar-brand {
+      width: 10%;
+    }
+    .navbar-nav > li.nav-item > a.nav-link {
+      padding: 0.5rem 1rem;
+    }
+    .navbar-nav > li.nav-item > a.nav-link,
+    .navbar-nav > li.nav-item > a.nav-link:focus {
+      color: fade-out($white, .3);
+      &:hover {
+        color: $white;
+      }
+    }
+    &.navbar-shrink {
+      border-bottom: 1px solid fade-out($gray-900, .9);
+      background-color: $white;
+      .navbar-brand {
+        color: $primary;
+        &:focus,
+        &:hover {
+          color: darken($primary, .1);
+        }
+      }
+      .navbar-nav > li.nav-item > a.nav-link,
+      .navbar-nav > li.nav-item > a.nav-link:focus {
+        color: $gray-900;
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+}

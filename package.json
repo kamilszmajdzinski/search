@@ -1,0 +1,35 @@
+{
+    "title": "search",
+    "name": "ksearch-website",
+    "version": "4.0.0",
+    "description": "Portfolio.",
+    "keywords": [
+        "css",
+        "sass",
+        "html",
+        "responsive"
+    ],
+    "license": "MIT",
+    "author": "Kamil Szmajdzinski",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/szmajdzinskikamil/szmajdzinskikamil.github.io.git"
+    },
+    "dependencies": {
+        "bootstrap": "4.0.0",
+        "font-awesome": "4.7.0",
+        "jquery": "3.3.1",
+        "jquery.easing": "1.4.1",
+        "magnific-popup": "1.1.0",
+        "scrollreveal": "3.3.6"
+    },
+    "devDependencies": {
+        "browser-sync": "2.23.6",
+        "gulp": "^3.9.1",
+        "gulp-clean-css": "3.9.2",
+        "gulp-header": "2.0.1",
+        "gulp-rename": "1.2.2",
+        "gulp-sass": "2.1.0",
+        "gulp-uglify": "3.0.0"
+    }
+}

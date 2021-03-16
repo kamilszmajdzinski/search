@@ -1,0 +1,370 @@
+// Global styling for this template
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+font-family: 'Poppins', sans-serif;
+  hr {
+    max-width: 50px;
+    border-width: 3px;
+    border-color: $prussianBlue;
+  }
+
+  hr.light {
+    border-color: $white;
+  }
+
+
+  .loader-wrapper{
+    opacity:1;
+    background-color:#ccc;
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:1000;
+  }
+
+  a {
+    color: $primary;
+    @include transition-all;
+    &:hover {
+      color: darken($primary, .1);
+    }
+  }
+
+  .aboutUs {
+    margin-top: 40px;
+  }
+
+  .bg-primary {
+    background-color: $prussianBlue !important;
+  }
+
+  .bg-dark {
+    background-color: $gray-900 !important;
+  }
+
+  .text-faded {
+    color: fade-out($white, .3);
+  }
+
+  section {
+    padding: 8rem 0;
+  }
+
+  .section-heading {
+    margin-top: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .shadow {
+    text-shadow: 4px 0px 11px rgba(0, 0, 0, 1);
+  }
+
+  .services {
+    padding: 4rem 0;
+    font-size: 1.5rem;
+  }
+
+  ::-moz-selection {
+    color: $white;
+    background: $gray-900;
+    text-shadow: none;
+  }
+
+  ::selection {
+    color: $white;
+    background: $gray-900;
+    text-shadow: none;
+  }
+
+  img::selection {
+    color: $white;
+    background: transparent;
+  }
+
+  img::-moz-selection {
+    color: $white;
+    background: transparent;
+  }
+
+  #git{
+    text-decoration: none;
+    color: $vividCerulean;
+  }
+
+  #git:hover {
+    color: $cerulean;
+  }
+
+  #mail{
+    color: $primary;
+  }
+  .cd-top {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    /* image replacement properties */
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    background: rgba(232, 98, 86, 0.8) url(../img/cd-top-arrow.svg) no-repeat center 50%;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity .3s 0s, visibility 0s .3s, background-color .3s 0s;
+    transition: opacity .3s 0s, visibility 0s .3s, background-color .3s 0s;
+  }
+
+  .cd-top.cd-top--show,
+  .cd-top.cd-top--fade-out,
+  .cd-top:hover {
+    -webkit-transition: opacity .3s 0s, visibility 0s 0s, background-color .3s 0s;
+    transition: opacity .3s 0s, visibility 0s 0s, background-color .3s 0s;
+  }
+
+  .cd-top.cd-top--show {
+    /* the button becomes visible */
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .cd-top.cd-top--fade-out {
+    /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+    opacity: .5;
+  }
+
+  .cd-top:hover {
+    background-color: #e86256;
+    opacity: 1;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .cd-top {
+      right: 20px;
+      bottom: 20px;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .cd-top {
+      height: 60px;
+      width: 60px;
+      right: 30px;
+      bottom: 30px;
+    }
+  }
+
+  .contactContainer {
+    display: flex;
+    flex-wrap: wrap;
+    input {
+      width: 100%;
+      padding: 6px;
+      margin-bottom: 8px;
+    }
+    textarea {
+      width: 100%;
+      padding: 6px;
+      margin-bottom: 8px;
+    }
+    button {
+      background-color: transparent;
+      border: none;
+      color: white;
+      transition: ease 0.5s;
+    }
+    button:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .contactContainer {
+      display: flex;
+    }
+    .form {
+      width: 50%;
+    }
+  }
+
+  .contactContainer.smallIcon {
+    a {
+      color: white;
+    }
+    p {
+      font-size: 1rem;
+    }
+    .fa {
+      font-size: 40px;
+      padding-right: 0px;
+    }
+  }
+  .icon{
+    text-align: center;
+    margin: 0 auto;
+  }
+
+
+  .caption{
+    color: white;
+    padding-top: 3em;
+    padding-bottom: 0;
+  }
+
+  .footer {
+    background-color: $prussianBlue;
+    height: 12em;
+    display: flex;
+    border-top: 2px solid $richBlack;
+    align-items: center;
+    padding-left: 16px;
+    color: white;
+    font-size: 1rem;
+    box-shadow: 10px 10px 17px 11px rgba(0,0,0,0.75);
+
+    p {
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .footerCaption {
+      margin-top: auto;
+      margin-bottom: 16px;
+      font-weight: bold;
+    }
+
+    .footerMenuItem {
+      padding: 8px;
+      font-size: 16px;
+      color: white;
+      margin: 4px;
+    }
+
+    @media (min-width: 992px) {
+      .footerMenu {
+        display: flex;
+        justify-content: center;
+      }
+
+      .footerCaption {
+        font-weight: bold;
+      }
+
+      .footerMenuItem {
+        padding: 8px;
+        font-size: 16px;
+        color: white;
+        margin: 8px;
+      }
+    }
+  }
+
+  .cardCustom {
+    padding: 24px;
+    -webkit-box-shadow: 10px 10px 28px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 28px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 28px 0px rgba(0,0,0,0.75);
+    @media (min-width: 992px) {
+      padding: 46px;
+    }
+  }
+
+  header.masthead {
+    .cardCustom {
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  #contactPar {
+    font-size: 1rem;
+  }
+
+  #contactPar2 {
+    font-size: 1rem;
+    margin-bottom: 40px;
+  }
+  .google-maps {
+    position: relative;
+    padding-bottom: 75%; // This is the aspect ratio
+    overflow: hidden;
+  }
+  .google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  #googleMaps {
+    width: 100%;
+    padding: 0;
+    height: 300px;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    #googleMaps {
+      width: 50%;
+      padding: 0;
+      height: 400px;
+    }
+  }
+
+
+  .text-left {
+    text-align: left;
+  }
+
+  .boxShadow {
+    box-shadow: 3px -5px 22px 0px rgba(0,0,0,0.75);
+  }
+
+  .achievementCard {
+    padding: 46px;
+    margin-top: 16px;
+    background-color: $prussianBlue;
+    color: white;
+  }
+
+  #lastAchievement {
+    margin-bottom: 16px;
+  }
+
+  #five {
+    text-align: center;
+  }
+
+  .contactButton {
+    border: 5px solid $prussianBlue;
+    padding: 16px;
+    font-size: 22px;
+  }
+
+  .contactButton:hover {
+    background-color: $prussianBlue;
+    color: white;
+    text-decoration: none;
+  }
+  @media only screen and (min-width: 1024px) {
+    .contactButton {
+      font-size: 32px;
+    }
+  }
+}

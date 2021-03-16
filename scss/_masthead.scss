@@ -1,0 +1,167 @@
+// Styling for the masthead
+header.masthead {
+  padding-bottom: calc(10rem - 56px);
+  //background-image: url('../img/header.jpg');
+
+  background-position: center center;
+  @include background-cover;
+  
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+  0px 8px 13px rgba(0,0,0,0.2),
+  0px 18px 23px rgba(0,0,0,0.1);
+
+  hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: $prussianBlue;
+  }
+  .fa {
+    font-size: 60px;
+    -webkit-transition: font-size 2s; 
+    transition: color 0.5s;
+    padding-right: 20px;
+     color: white;
+
+  }
+
+  #frontEnd{
+    font-family: 'Poppins', sans-serif;
+   
+  }
+
+  .fa:hover{
+    color: $prussianBlue;
+  }
+  #front{
+    padding-bottom: 20px;
+  }
+  h1 {
+    font-size: 1.7rem;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 24px;
+  }
+
+  p {
+    font-weight: 300;
+  }
+  @media (min-width: 768px) {
+    p {
+      font-size: 1.5rem;
+    }
+  }
+  @media (min-width: 992px) {
+    height: 100vh;
+    min-height: 650px;
+    padding-top: 0;
+    padding-bottom: 0;
+    h1 {
+      font-size: 4rem;
+    }
+  }
+  @media (min-width: 1200px) {
+    h1 {
+      font-size: 4rem;
+    }
+  }
+}
+
+.mainPageMasthead {
+  background-image: url('https://images.unsplash.com/photo-1590530402014-bbc33e70e617?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=3300&q=80');
+  padding-top: 10em;
+  @media (min-width: 992px) {
+    height: 100vh;
+    min-height: 650px;
+    padding-top: 0;
+    padding-bottom: 0;
+    h1 {
+      font-size: 4rem;
+    }
+  }
+  @media (min-width: 1200px) {
+    h1 {
+      font-size: 4rem;
+    }
+  }
+}
+
+#aboutUsMasthead{
+  background-image: url('https://images.unsplash.com/39/lIZrwvbeRuuzqOoWJUEn_Photoaday_CSD%20(1%20of%201)-5.jpg?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80');
+  padding-top: 8rem;
+
+  @media (min-width: 992px) {
+    padding-top: 5rem;
+    height: 120vh;
+    min-height: 650px;
+    padding-bottom: 0;
+    h1 {
+      font-size: 4rem;
+    }
+  }
+  @media (min-width: 1200px) {
+    h1 {
+      font-size: 4rem;
+    }
+  }
+}
+
+#contactMasthead{
+  background-image: url('https://images.unsplash.com/photo-1544386978-f09d9ee45654?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=3294&q=80');
+  padding-top: 8rem;
+
+  @media (min-width: 992px) {
+    padding-top: 6rem;
+    height: 80vh;
+    min-height: 650px;
+    padding-bottom: 0;
+    h1 {
+      font-size: 4rem;
+    }
+  }
+  @media (min-width: 1200px) {
+    h1 {
+      font-size: 4rem;
+    }
+  }
+}
+
+#offerMasthead{
+  background-image: url('https://images.unsplash.com/photo-1499343245400-cddc78a01317?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80');
+  padding-top: 8rem;
+
+  @media (min-width: 992px) {
+    padding-top: 5rem;
+    height: 180vh;
+    min-height: 650px;
+    padding-bottom: 0;
+    h1 {
+      font-size: 4rem;
+    }
+  }
+  @media (min-width: 1200px) {
+    h1 {
+      font-size: 4rem;
+    }
+  }
+}
+
+#pricesMasthead{
+  background-image: url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=3300&q=80');
+  padding-top: 8rem;
+  height: 100vh;
+
+
+  @media (min-width: 992px) {
+    padding-top: 5rem;
+    height: 100vh;
+    min-height: 650px;
+    padding-bottom: 0;
+    h1 {
+      font-size: 4rem;
+    }
+  }
+  @media (min-width: 1200px) {
+    h1 {
+      font-size: 4rem;
+    }
+  }
+}

@@ -1,0 +1,284 @@
+// Styling for the portfolio section
+.portfolio-box {
+  position: relative;
+  display: block;
+  max-width: 650px;
+
+  margin: 0 auto;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  .portfolio-box-caption {
+    position: absolute;
+    background-position: center center;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    color: $white;
+    background: fade-out($primary, 0.1);
+    @include transition-all;
+    .portfolio-box-caption-content {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      transform: translateY(-50%);
+      text-align: center;
+
+      .wrapper {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-items: center;
+      }
+
+      .wrapper-four {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: space-around;
+      }
+
+      .logo-left {
+        justify-self: end;
+      }
+
+      .logo-right {
+        justify-self: start;
+      }
+
+      .logo {
+        width: 40%;
+        padding-top: 0.5em;
+        
+        
+      }
+
+      
+
+      #logo1,
+      #logoNode {
+        justify-self: end;
+      }
+
+      #logo2 {
+        justify-self: start;
+      }
+      #logo2gulp {
+        justify-self: start;
+        width: 20%;
+        padding-left: 0.5em;
+      }
+
+      .wrapper-one {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+
+        #logoJS {
+          grid-column: 2/4;
+          padding-top: 1em;
+        }
+      }
+
+      .project-name {
+        padding: 0 15px;
+        margin-right: 20%;
+        @include sans-serif-font;
+        text-align: center;
+      }
+      .project-category {
+        font-size: 24px;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family: 'Poppins', sans-serif;
+      }
+      .project-name {
+        font-size: 18px;
+      }
+    }
+  }
+  &:hover {
+    .portfolio-box-caption {
+      opacity: 1;
+    }
+  }
+  &:focus {
+    outline: none;
+  }
+  @media (min-width: 768px) {
+    .portfolio-box-caption {
+      .portfolio-box-caption-content {
+        .project-category {
+          font-size: 14px;
+        }
+        .project-name {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
+
+
+.portfolio {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.portfolioItem {
+  flex-grow: 1;
+  width: 50%;
+  height: 32em;
+  min-width: 20em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $cerulean;
+  opacity: 1;
+  
+
+  .imgDiv {
+    display: flex;
+    justify-content: center;
+  }
+
+  .available {
+    font-size: 0.6em;
+    opacity: 0;
+    transition: 0.1s ease;
+  }
+
+  .par {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-shadow: 5px -1px 8px rgba(0, 0, 0, 1);
+    margin: 0;
+  }
+
+  .seeMore {
+    color: white;
+    font-size: 1em;
+    text-shadow: 5px -1px 8px rgba(0, 0, 0, 1);
+  }
+  .seeMore:hover {
+    text-decoration: underline;
+    color: $vividCerulean;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 350px) {
+  .seeMoreContent {
+    margin: 30px;
+  }
+  .par {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .seeMoreContent {
+    margin: 32px;
+  }
+  .portfolioItem {
+    height: 25em;
+  }
+}
+
+.seeMoreContent {
+  display: block;
+  color: white;
+  text-shadow: 5px -1px 8px rgba(0, 0, 0, 1);
+  text-align: center;
+  margin: 22px;
+}
+
+.hideMoreContent {
+  display: none;
+}
+
+#one {
+  background-image: url('../img/portfolio/thumbnails/zdrada.jpg');
+  background-position: center;
+  background-repeat:  no-repeat;
+  overflow: hidden;
+  background-size: cover
+}
+
+
+#two {
+  background-image: url('../img/portfolio/thumbnails/obserwacja.jpg');
+  background-position: center;
+  background-repeat:  no-repeat;
+  overflow: hidden;
+    background-size: cover;
+}
+
+ #three {
+  background-image: url('../img/portfolio/thumbnails/biznes.jpg');
+  background-position: center;
+  background-repeat:  no-repeat;
+  overflow: hidden;
+    background-size: cover;
+
+    img {
+      width: 80%;
+      opacity: 0;
+      transition: 0.1s ease-in;
+    }
+ }
+
+ #three:hover{
+  img{
+    opacity: 1;
+  }
+}
+ 
+
+
+
+ #four {
+  background-image: url('../img/portfolio/thumbnails/poszukiwania.jpg');
+  background-position: center;
+  background-repeat:  no-repeat;
+  overflow: hidden;
+    background-size: cover;
+ }
+
+ #five {
+  background-image: url('../img/portfolio/thumbnails/majatek.jpg');
+  background-position: center;
+  background-repeat:  no-repeat;
+  overflow: hidden;
+    background-size: cover;
+
+    img {
+      width: 70%;
+      opacity: 0;
+      transition: 0.1s ease-in;
+    }
+
+    
+ }
+
+ #five:hover{
+  img{
+    opacity: 1;
+  }
+}
+
+ #six {
+  background-image: url('../img/portfolio/thumbnails/podsluch.jpg');
+  background-position: center;
+  background-repeat:  no-repeat;
+  overflow: hidden;
+    background-size: cover;
+ }
