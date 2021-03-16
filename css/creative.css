@@ -975,7 +975,7 @@ header.masthead p {
 .seeMoreContent {
   display: block;
   color: white;
-  text-shadow: 5px -1px 8px black;
+  text-shadow: 5px 2px 4px black;
   text-align: center;
   margin: 22px;
 }
@@ -985,7 +985,7 @@ header.masthead p {
 }
 
 #one {
-  background-image: url("../img/portfolio/thumbnails/zdrada.jpg");
+  background-image: url("../img/portfolio/thumbnails/zdrad_blu.jpg");
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -993,7 +993,7 @@ header.masthead p {
 }
 
 #two {
-  background-image: url("../img/portfolio/thumbnails/obserwacja.jpg");
+  background-image: url("../img/portfolio/thumbnails/posz_blu.jpg");
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -1001,7 +1001,7 @@ header.masthead p {
 }
 
 #three {
-  background-image: url("../img/portfolio/thumbnails/biznes.jpg");
+  background-image: url("../img/portfolio/thumbnails/biznes_blu.jpg");
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -1019,7 +1019,7 @@ header.masthead p {
 }
 
 #four {
-  background-image: url("../img/portfolio/thumbnails/poszukiwania.jpg");
+  background-image: url("../img/portfolio/thumbnails/poszukiwania_blu.jpg");
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -1027,7 +1027,7 @@ header.masthead p {
 }
 
 #five {
-  background-image: url("../img/portfolio/thumbnails/majatek.jpg");
+  background-image: url("../img/portfolio/thumbnails/majatek_blu.jpg");
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -1045,7 +1045,7 @@ header.masthead p {
 }
 
 #six {
-  background-image: url("../img/portfolio/thumbnails/podsluch.jpg");
+  background-image: url("../img/portfolio/thumbnails/podsluch_blu.jpg");
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
