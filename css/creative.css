@@ -394,8 +394,11 @@ body .contactButton:hover {
   width: 100%;
 }
 
-#mainNav .hideBrand {
-  display: none;
+#mainNav #mainNavLogo {
+  font-size: 1.5em;
+  font-weight: 600;
+  text-decoration: none;
+  color: #152C40;
 }
 
 #mainNav .navbar-nav .navbar-phone {
@@ -442,6 +445,9 @@ body .contactButton:hover {
     background-color: transparent;
     height: 8em;
   }
+  #mainNav #mainNavLogo {
+    color: white;
+  }
   #mainNav .navbar-brand-link {
     width: 97px;
     height: 97px;
@@ -472,6 +478,9 @@ body .contactButton:hover {
   #mainNav.navbar-shrink {
     border-bottom: 1px solid rgba(33, 37, 41, 0.1);
     background-color: #fff;
+  }
+  #mainNav.navbar-shrink #mainNavLogo {
+    color: #152C40;
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #003F5A;
@@ -505,6 +514,13 @@ body .contactButton:hover {
 
 #secondaryNav .navbar-brand {
   width: 100%;
+}
+
+#secondaryNav #secondaryNavLogo {
+  font-size: 1.5em;
+  font-weight: 600;
+  text-decoration: none;
+  color: #152C40;
 }
 
 #secondaryNav .navbar-nav .navbar-phone {
@@ -556,6 +572,9 @@ body .contactButton:hover {
     height: 97px;
     position: absolute;
     top: -30px;
+  }
+  #secondaryNav #secondaryNavLogo {
+    color: white;
   }
   #secondaryNav .container {
     position: relative;

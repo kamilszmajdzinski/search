@@ -7,6 +7,12 @@
   .navbar-brand {
     width: 15%;
   }
+  #secondaryNavLogo {
+    font-size: 1.5em;
+    font-weight: 600;
+    text-decoration: none;
+    color: $prussianBlue;
+  }
   .navbar-nav {
     .navbar-phone {
       border: 2px solid white;
