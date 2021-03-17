@@ -110,7 +110,7 @@
 #secondaryNav {
   border-bottom: 1px solid fade-out($gray-900, .9);
   background-color: $white;
-  @include sans-serif-font;
+  font-family: Poppins, sans-serif;
   @include transition-all;
   .navbar-brand-link {
     width: 50px;
